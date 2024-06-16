@@ -1,0 +1,33 @@
+export const trips=[
+    {
+        "name":"Gale Reef",
+        "image": "reef1.jpg",
+        "description": "<p>Sed et augue lorem. check In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis.</p>",
+        "code":"Something1",
+        "length": "4 nights/ 5 days",
+        "start": "2021-02-14T08:00:00Z",
+        "resort":"Emerald Bay, 3 stars",
+        "perPerson":"799.00"
+
+    },
+    {
+        "name":"Dawson's Reef",
+        "image": "reef2.jpg",
+        "description": "<p> Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis.</p>",
+        "code":"Something2",
+        "length": "4 nights/ 5 days",
+        "start": "2021-09-14T08:00:00Z",
+        "resort":"Blue Lagoon , 4 stars",
+        "perPerson":"799.00"
+    },
+    {
+        "name":"Claire's Reef",
+        "image": "reef3.jpg",
+        "description": "<p>Sed et augue lorem. In sit amet placerat arcu. Mauris volutpat ipsum ac justo mollis vel vestibulum orci gravida. Vestibulum sit amet porttitor odio. Nulla facilisi. Fusce at pretium felis. </p>",
+        "code":"Something3",
+        "length": "4 nights/ 5 days",
+        "start": "2021-04-14T08:00:00Z",
+        "resort":"Coral Sands, 3 stars",
+        "perPerson":"799.00"
+    }
+]
