@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { TripCardComponent } from '../trip-card/trip-card.component';
 import { Trip } from '../models/trip';
 import { TripDataService } from '../services/trip-data.service';
-
+import { AuthenticationService } from '../services/authentication.service';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-trip-listing',
   standalone: true,
@@ -19,6 +20,7 @@ export class TripListingComponent implements OnInit {
   message: string = '';
  
   constructor(
+    private authenticationService: AuthenticationService,
     private tripDataService: TripDataService,
     private router: Router){
     console.log('trip-listing constructor')
@@ -29,6 +31,8 @@ export class TripListingComponent implements OnInit {
   }
   
   private getStuff(): void {
+    console.log("Trip Listing ");
+
      this.tripDataService.getTrips()
     .subscribe({
       next: (value: any) => {
@@ -47,6 +51,9 @@ export class TripListingComponent implements OnInit {
     })
    }
     
+  public isLoggedIn(){
+    return this.authenticationService.isLoggedIn();
+  }
   
 
   ngOnInit(): void {

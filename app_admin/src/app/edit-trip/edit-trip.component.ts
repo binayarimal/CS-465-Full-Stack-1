@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from "@angular/forms";
 import { TripDataService } from '../services/trip-data.service';
 import { Trip } from '../models/trip'
+import { HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-edit-trip',
@@ -25,7 +26,7 @@ export class EditTripComponent {
       ) {}
 
     ngOnInit() : void{
-
+     
       // Retrieve stashed trip ID
       let tripCode = localStorage.getItem("tripCode");
       if (!tripCode) {
@@ -68,6 +69,7 @@ export class EditTripComponent {
   }
 
     public onSubmit(){
+
       this.submitted = true;
       if(this.editForm.valid)
       {
